@@ -1,0 +1,50 @@
+#WholeWebsite {
+	background-color: #cccc00;
+	border-style: inset;
+	border-width: 7px;
+	padding: 10px;
+}
+
+#TextEditorButtons {
+	background-color: #999900;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 2px;
+	margin: 10px;
+}
+
+#HTMLButton {
+	background-color: #999900;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 2px;
+	margin: 10px;
+	height: 25px;
+	width: 75px;
+	padding: 20px;
+	text-align: center;
+}
+
+#CSSButton {
+	background-color: #999900;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 2px;
+	margin: 10px;
+	height: 25px;
+	width: 75px;
+	padding: 20px;
+	text-align: center;
+}
+
+#JavaScriptButton {
+	background-color: #999900;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 2px;
+	margin: 10px;
+	height: 25px;
+	width: 75px;
+	padding: 20px;
+	text-align: center;
+}
