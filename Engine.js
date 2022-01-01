@@ -1,6 +1,14 @@
-document.getElementById('FileMaker').addEventListener('keydown', function(a) {
-  if (a.key == 'Tab') {
-    a.preventDefault();
+
+// this lets the text editor tab
+
+
+
+let YoFileMaker = document.getElementById("YoFileMaker");
+
+
+YoFileMaker.addEventListener('keydown', function(tab) {
+  if (tab.key == 'Tab') {
+    tab.preventDefault();
     var start = this.selectionStart;
     var end = this.selectionEnd;
 
@@ -13,3 +21,6 @@ document.getElementById('FileMaker').addEventListener('keydown', function(a) {
       this.selectionEnd = start + 1;
   }
 });
+
+
+console.log(YoFileMaker.textContent);

@@ -1,69 +1,67 @@
-#WholeWebsite {
+#Yo {
+	background-color: #999900;
+}
+
+#YoHTMLTab{
+	grid-area: left1;
+}
+
+#YoCSSTab{
+	grid-area: center1;
+}
+
+#YoJavaScriptTab{
+	grid-area: right1;
+}
+
+#YoApp {
 	background-color: #cccc00;
 	border-style: inset;
 	border-width: 7px;
 	padding: 10px;
 }
 
-#Index {
+#YoIndex {
 	background-color: #999900;
 	border-style: inset;
 	border-width: 3px;
 	border-radius: 2px;
 	margin: 10px;
-	text-align: center;
-
+	Float: Right
+	overflow: hidden;
 }
 
-#FileMaker {
-	background-color: #999900;
-}
-
-#Modules {
+#YoIDE {
+	
 	background-color: #999900;
 	border-style: inset;
 	border-width: 3px;
 	border-radius: 2px;
 	margin: 10px;
-	text-align: center;
 
-}
-
-#HTMLButtonTab {
-	background-color: #999900;
-	border-style: inset;
-	border-width: 3px;
-	border-radius: 2px;
-	margin: 10px;
-	height: 25px;
-	width: 75px;
-	padding: 20px;
-	text-align: center;
+	float: center;
 	
 }
 
-#CSSButtonTab {
+#YoFileMaker {
 	background-color: #999900;
-	border-style: inset;
-	border-width: 3px;
-	border-radius: 2px;
 	margin: 10px;
-	height: 25px;
-	width: 75px;
-	padding: 20px;
-	text-align: center;
-	
+	scrollbar-color: red, yellow;
+	overflow: hidden;
 }
 
-#JavaScriptButtonTab {
+#YoModules {
+
 	background-color: #999900;
 	border-style: inset;
 	border-width: 3px;
 	border-radius: 2px;
 	margin: 10px;
-	height: 25px;
-	width: 75px;
-	padding: 20px;
-	text-align: center;
 
+}
+
+li {
+  display: inline;
+  float: left
+  overflow: hidden;
 }
