@@ -5,15 +5,31 @@
 	padding: 10px;
 }
 
-#TextEditorButtons {
+#Index {
 	background-color: #999900;
 	border-style: inset;
 	border-width: 3px;
 	border-radius: 2px;
 	margin: 10px;
+	text-align: center;
+
 }
 
-#HTMLButton {
+#FileMaker {
+	background-color: #999900;
+}
+
+#Modules {
+	background-color: #999900;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 2px;
+	margin: 10px;
+	text-align: center;
+
+}
+
+#HTMLButtonTab {
 	background-color: #999900;
 	border-style: inset;
 	border-width: 3px;
@@ -23,9 +39,10 @@
 	width: 75px;
 	padding: 20px;
 	text-align: center;
+	
 }
 
-#CSSButton {
+#CSSButtonTab {
 	background-color: #999900;
 	border-style: inset;
 	border-width: 3px;
@@ -35,9 +52,10 @@
 	width: 75px;
 	padding: 20px;
 	text-align: center;
+	
 }
 
-#JavaScriptButton {
+#JavaScriptButtonTab {
 	background-color: #999900;
 	border-style: inset;
 	border-width: 3px;
@@ -47,4 +65,5 @@
 	width: 75px;
 	padding: 20px;
 	text-align: center;
+
 }
