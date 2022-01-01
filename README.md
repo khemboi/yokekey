@@ -14,7 +14,7 @@ My teacher Mr. Anderson in highschool had us learn programming through a website
 
 Yolk-Key or YoKeKey inspired by the infamous hacker known as 4chan, also I don't want to get sued by Nintendo or some other software company in the future so lets go with Yo-KEK-Key.
 
-# Why those colors
+# Why those colors?
 
 I hate boring looking software.
 
