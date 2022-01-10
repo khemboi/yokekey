@@ -1,0 +1,67 @@
+#Yo {
+	background-color: #999900;
+}
+
+#YoHTMLTab{
+	grid-area: left1;
+}
+
+#YoCSSTab{
+	grid-area: center1;
+}
+
+#YoJavaScriptTab{
+	grid-area: right1;
+}
+
+#YoApp {
+	background-color: #cccc00;
+	border-style: inset;
+	border-width: 7px;
+	padding: 10px;
+}
+
+#YoIndex {
+	background-color: #999900;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 2px;
+	margin: 10px;
+	Float: Right
+	overflow: hidden;
+}
+
+#YoIDE {
+	
+	background-color: #999900;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 2px;
+	margin: 10px;
+
+	float: center;
+	
+}
+
+#YoFileMaker {
+	background-color: #999900;
+	margin: 10px;
+	scrollbar-color: red, yellow;
+	overflow: hidden;
+}
+
+#YoModules {
+
+	background-color: #999900;
+	border-style: inset;
+	border-width: 3px;
+	border-radius: 2px;
+	margin: 10px;
+
+}
+
+li {
+  display: inline;
+  float: left
+  overflow: hidden;
+}
