@@ -21,3 +21,7 @@ I hate boring looking software.
 # Why not just use an IDE or NotePad?
 
 I want this to be small and crossplatform, while doing something I don't see in any other programming tool thats FREE TO USE FOREVER. Those things are helping me now but the goal is to use this and only this with no regrets, also it's a good challenge to build.
+
+# Is there an official domain?
+
+https://www.yokekey.com
