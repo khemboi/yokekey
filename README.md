@@ -25,3 +25,9 @@ I want this to be small and crossplatform, while doing something I don't see in 
 # Is there an official domain?
 
 https://www.yokekey.com
+
+# Is there an gist for this?
+
+
+<script src="https://gist.github.com/khemboi/49179bd5ffb376a100cabfe83cb6926b.js"></script>
+
