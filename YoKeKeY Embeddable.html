@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+	<html id="Yo">
+					<div id="YoApp">
+		
+
+						<div id="YoHeader">
+											<head>
+													<!--this is so you can link externally-->
+					
+													<link rel="stylesheet" href="CSS.css">
+			
+													<!--Use this tag to embed CSS and Javascript on sites, this is to help keep style in an IFrame-->
+																			
+														<style>
+																			
+																#Yo				{
+																												
+																				background-color: #999900;
+																			}
+
+																#YoApp 			{
+																													
+																				background-color: #cccc00;
+																				border-style: inset;
+																				border-width: 7px;
+																				padding: 10px;
+																			}
+																													
+																													
+
+																#YoIndex 		{
+																													
+																				background-color: #999900;
+																				border-top-style: inset;
+																				border-bottom-style: inset;
+																				border-width: 3px;
+																				border-radius: 2px;
+																				width: 500px;
+																				Float: Right
+																				overflow: hidden;
+																				font: Lucida Console;
+																			
+																			}
+																													
+																													
+
+																#YoIDE 			{
+	
+																				background-color: Yellow;
+																				border-style: inset;
+																				border-width: 3px;
+																				border-radius: 2px;
+																				float: center;
+																				width:500px;
+																				padding: 5px;
+																			
+	
+																			}
+																													
+																													
+
+																#YoFileMaker 	{
+																													
+																				background-color: #999900;
+																				margin: 10px;
+																				scrollbar-color: red, yellow;
+																				overflow: hidden;
+				
+																			}
+																																																
+
+																#YoFileMaker:Hover 	{
+																
+																					background-color: yellow;
+																												
+																												
+																			}
+																												
+																																																
+																li 					{
+																													
+																				display: inline;
+																				float: left
+																				overflow: hidden;
+																				border-style: inset;
+																													
+																													
+																			}
+																												
+																												
+																#YoSaveButton:Hover {
+																
+																				background-color: Yellow;
+																												
+																			}
+																										
+																
+																#YoRunButton:Hover {
+																
+																				background-color: Yellow;
+																												
+																			}
+
+																			
+																#YoRunButton					{
+																													
+																				display: inline;
+																				float: left
+																				overflow: hidden;
+																				border-style: inset;
+																													
+																													
+																			}			
+																			
+																
+															</style>
+						
+																				<!--title helps change whats written in the tab-->
+				
+																								<title>YoKeKeY</title>	
+						
+																								</head>
+		
+		
+																			</div>
+		
+	
+							<div id="YoBody">
+		
+		
+												<body>																																												
+																																													
+														<div id="YoIDE">
+																			<H3>YoKeKeY</H3>
+								
+									
+																							<div id="YoIndex">
+										
+											 
+																											<ul>
+																														<li id="YoSaveButton">Save</li>
+																														<li>Undo</li>
+											
+																											</ul>
+																																							
+																							<textarea id="YoFileMaker" name="YoFileMaker" rows="4" cols="50" style="height: 430px; width: 475px;">Hey World</textarea>
+																																							
+																																							
+																																							
+																														<p id="YoRunButton">Run</p>
+																							</div>
+									
+									
+																																		
+						
+									
+														</div>								
+														
+														
+						
+							<script>
+								
+								
+								
+								
+//pulls the textarea into an object								
+							
+let YoFileMaker = document.getElementById("YoFileMaker");
+
+//turns text of textarea into an object
+
+let YoFile = YoFileMaker.textContent;
+
+function newFile(fileName, fileType, Data) {
+
+
+	fileName = this.name
+	fileType = this.fileType;
+	Data = this.textContent;
+
+}
+
+
+// this lets the text editor tab
+
+YoFileMaker.addEventListener('keydown', function(tab) {
+	
+	
+	
+  if (tab.key == 'Tab') {
+    tab.preventDefault();
+    var start = this.selectionStart;
+    var end = this.selectionEnd;
+    
+    
+    
+
+    // set textarea value to: text before caret + tab + text after caret
+    this.value = this.value.substring(0, start) +
+      "\t" + this.value.substring(end);
+      
+      
+      
+
+    // put caret at right position again
+    this.selectionStart =
+      this.selectionEnd = start + 1;
+  }
+});
+
+
+console.log(YoFile);
+							
+							
+</script>
+							
+							
+							
+								
+							
+										</body>
+																		
+																		
+		
+									</div>
+															
+															
+															
+															
+			
+		
+		
+		
+		
+		
+		
+				<div id="Yofooter">
+	
+				<footer>
+	
+	
+	<p>designed to be free forever by <a href="https://github.com/khemboi">Khem Boi</a></p>
+			
+	</footer>
+	
+		</div>
+	
+	
+	
+	</div>
+	
+	
+</html>
+
+
+
+
+
+
+
