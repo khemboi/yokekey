@@ -13,7 +13,9 @@
 																			
 																#Yo				{
 																												
-																				background-color: #999900;
+																				background-color: #999900;	
+																				 position: absolute;
+																				z-index: 9;
 																			}
 
 																#YoApp 			{
@@ -22,11 +24,14 @@
 																				border-style: inset;
 																				border-width: 7px;
 																				padding: 10px;
+																				overflow: hidden;
+																				height: 880px;
+																				width: 1000px;
 																			}
 																													
 																													
 
-																#YoIndex 		{
+																#YoToolBar 		{
 																													
 																				background-color: #999900;
 																				border-top-style: inset;
@@ -48,16 +53,16 @@
 																				border-style: inset;
 																				border-width: 3px;
 																				border-radius: 2px;
-																				float: center;
+																				float: right;
 																				width:500px;
 																				padding: 5px;
-																			
+																				
 	
 																			}
 																													
 																													
 
-																#YoFileMaker 	{
+																#YoFileTyper 	{
 																													
 																				background-color: #999900;
 																				margin: 10px;
@@ -67,12 +72,14 @@
 																			}
 																																																
 
-																#YoFileMaker:Hover 	{
+																#YoFileTyper:Hover 	{
 																
-																				background-color: yellow;
+																				background-color: #cccc00;
 																												
 																												
 																			}
+																			
+																			
 																												
 																																																
 																li 					{
@@ -81,23 +88,37 @@
 																				float: left
 																				overflow: hidden;
 																				border-style: inset;
+																				
+																
 																													
 																													
 																			}
-																												
+																						
+																#YoNewFileButton	{
+																
+																					float: right;
+																
+																			}
+
+																#YoNewFileButton:Hover {
+																
+																			background-color: #cccc00;	
+																
+																			}
+
+																
 																												
 																#YoSaveButton:Hover {
 																
-																				background-color: Yellow;
+																				background-color: #cccc00;
 																												
 																			}
 																										
 																
 																#YoRunButton:Hover {
 																
-																				background-color: Green;
-																				width: 100px;
-																				height: 100px;
+																				background-color: #cccc00;
+																				
 																				
 																			}
 
@@ -108,10 +129,41 @@
 																				float: right
 																				overflow: hidden;
 																				border-style: inset;
+																				width: 100px;
+																				height: 100px;
 																													
 																													
-																			}			
+																			}	
+
+
+																#YoFileMaker		{
+																
+																				background-color: #999900;
+																				width: 200px;
+																				height: 100px;
+																				float: left;
+																				overflow: hidden;
+																				padding: 10px;
 																			
+																			
+																			}
+																			
+																
+																input							{
+																
+																				background-color: #999900;
+																				font-weight: bold;
+																				width: 75px;
+																
+																			}
+																
+																
+																#YoFooter		{
+																
+																				position: absolute;
+																				bottom:0;
+																			}
+																
 																
 															</style>
 						
@@ -128,62 +180,101 @@
 					<div id="YoBody">
 		
 		
-												<body>																																												
-																																													
-														<div id="YoIDE">
-																			<H3>YoKeKeY</H3>
+										<body>		
+
+												<div id="YoFileMaker">
+												
+														<h3>fileName.fileType</h3>
+														
+																<div>
+																
+																
+																		<ul>
+																														
+																				<li id="YoNewFileButton">+</li>
+											
+																		</ul>
+														
+																		<H3><input id="YoFileName"></input>.<input id="YoFileType"></input></H3>
 								
-									
-																							<div id="YoIndex">
+																</div>
+												
+												</div>
+										
+
+														
+																<div id="YoIDE">
+																			
+																							<div id="YoToolBar">
 										
 											 
-																											<ul>
-																														<li id="YoSaveButton">Save</li>
-																														<li id="YoRunButton">Run</li>
+																										
+																											
+																											
+																											<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 430px; width: 475px;" placeholder="Hey World"></textarea>
+																											
+																											
+																												<ul>
+																														<li id="YoSaveButton" class="button">Save</li>
+																														<li id="YoRunButton" class="button">Run</li>
 											
 																											</ul>
-																											
-																											
-																											
-																											
 																									</div>			
-																																							
-																							<textarea id="YoFileMaker" name="YoFileMaker" rows="4" cols="50" style="height: 430px; width: 475px;">Hey World</textarea>
-																																							
-																																							
-																																							
-																														
-																						
-									
-									
-																																		
+																																																																								
 						
 									
-														</div>								
+																</div>								
 														
 														
 						
 <script>
 								
 								
+
+//updates/creates file object
+
+class file{
+
+		file(fileName, fileType, data, id) {
+
+			fileName = this.name;
+			fileType = this.fileType;
+			data = this.value;
+			id = document.getElementById(id);
+			console.log(this.name + " File Object I");
+
+		}
+
+}
 								
 								
 //makes the textarea into an object								
 							
-let YoFileMaker = document.getElementById("YoFileMaker");
+let YoFileTyper = document.getElementById("YoFileTyper");
 
-//turns text of textarea into an object
+const YoFile = new file("YoFile", "html", "hey", "YoFileTyper");
 
-let YoFile = YoFileMaker.textContent;
+console.log(YoFile.name);
 
-function fileState(){
-	console.log(YoFileMaker.textContent);
-  console.log("Text Inside File Maker Changed");
-
-}
+//AsYouType in the inputs it will call this
+YoFileTyper.oninput = fileState;
 
 
-YoFileMaker.oninput = fileState;
+
+
+let YoFileNameTag = document.getElementById("YoFileName");
+
+//AsYouType in the inputs it will call this
+YoFileNameTag.oninput = fileState;
+
+
+let YoFileTypeTag = document.getElementById("YoFileType");
+
+//AsYouType in the inputs it will call this
+YoFileTypeTag.oninput = fileState;
+
+
+const whatTo = {drag: "id ", click: "id", color: "id"};
 
 
 //makes the run button work
@@ -192,13 +283,6 @@ var YoRunButton = document.getElementById("YoRunButton");
 
 YoRunButton.onclick = runButton;
 
-function runButton() {
-
-	console.log("Run Button Clicking");
-	console.log(YoFileMaker.textContent);
-
-}
-
 
 //makes the save button work
 
@@ -206,31 +290,41 @@ var YoSaveButton = document.getElementById("YoSaveButton");
 
 YoSaveButton.onclick = saveButton;
 
-function saveButton() {
 
-	console.log("Save Button Clicking");
-	console.log(YoFile);
+// helps tell the computer whats in the text area
+
+function fileState(){
+	
+	var YoInput = String(this.value);
+	console.log("Text Inside "+ this.id +" Changed");
+	console.log(YoInput);
+	return YoInput;
+}
+
+
+
+
+function runButton() {
+
+	console.log("Run Button Clicking");
+	console.log(YoFileTyper.value);
 
 }
 
 
 
 
-//creates new file object
-function newFile(fileName, fileType, data) {
+function saveButton() {
 
-
-	fileName = this.id;
-	fileType = this.fileType;
-	data = this.textContent;
-	
+	console.log("Save Button Clicking");
+	console.log(YoFileTyper.value);
 
 }
 
 
 // this lets the text editor tab
 
-YoFileMaker.addEventListener('keydown', function(tab) {
+YoFileTyper.addEventListener('keydown', function(tab) {
 	
 	
 	
@@ -255,6 +349,56 @@ YoFileMaker.addEventListener('keydown', function(tab) {
   }
 });
 
+
+
+
+
+//YoFileTyper.addEventListener('onclick', dragElement(document.getElementById("Yo")));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "App")) {
+    // if present, the header is where you move the DIV from:
+    document.getElementById(elmnt.id + "App").onmousedown = dragMouseDown;
+  } else {
+    // otherwise, move the DIV from anywhere inside the DIV:
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    // stop moving when mouse button is released:
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+
+
+
 							
 							
 </script>
@@ -268,27 +412,19 @@ YoFileMaker.addEventListener('keydown', function(tab) {
 																		
 		
 									</div>
-															
-															
-															
-															
+																
+		
+		
+		
+				<div id="YoFooter">
+	
+						<footer>
+	
+							<p>designed to be free forever by <a href="https://github.com/khemboi">Khem Boi</a></p>
 			
-		
-		
-		
-		
-		
-		
-				<div id="Yofooter">
+						</footer>
 	
-				<footer>
-	
-	
-	<p>designed to be free forever by <a href="https://github.com/khemboi">Khem Boi</a></p>
-			
-	</footer>
-	
-		</div>
+				</div>
 	
 	
 	
@@ -296,10 +432,3 @@ YoFileMaker.addEventListener('keydown', function(tab) {
 	
 	
 </html>
-
-
-
-
-
-
-
