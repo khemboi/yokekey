@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
 	<html id="Yo">
-					<div id="YoApp">
+				<div id="YoApp">
 		
 
 						<div id="YoHeader">
+						
+										<p>im in your header div</p>
+										
 											<head>
 											
 													<!--Use this tag to embed CSS and Javascript on sites, this is to help keep style in an IFrame-->
@@ -13,24 +16,43 @@
 																			
 																#Yo				{
 																												
-																				background-color: #999900;	
+																				background-color: 	 #4d4d4d;	
+																				 float: center;
 																				 position: absolute;
 																				z-index: 9;
+																				
+																				
+																				
 																			}
 
 																#YoApp 			{
 																													
-																				background-color: #cccc00;
+																				background-color:  #999999;	
 																				border-style: inset;
 																				border-width: 7px;
-																				padding: 10px;
+																				padding: 5px;
 																				overflow: hidden;
-																				height: 880px;
-																				width: 1000px;
+																				height: 865px;
+																				width: 1850px;
+																				margin: 15px;
+																				margin-top: 25px;
+																				
 																			}
+																		
+																#YoBody		{
+																
+																				background-color: #f2f2f2;
+																				
+																				border-width: 7px;
+																				
+																				overflow: hidden;
+																				height: 740px;
+																				width: 1830px;
+																				margin-left: 5px;
+																				margin-top: 30px;
+																				
+																			}																
 																													
-																													
-
 																#YoToolBar 		{
 																													
 																				background-color: #999900;
@@ -44,54 +66,49 @@
 																				font: Lucida Console;
 																			
 																			}
-																													
-																													
+																																								
 
 																#YoIDE 			{
 	
-																				background-color: Yellow;
+																				background-color: #cccc00;
 																				border-style: inset;
 																				border-width: 3px;
 																				border-radius: 2px;
 																				float: right;
 																				width:500px;
-																				padding: 5px;
-																				
-	
+																				padding: 10px;
+																																																											
 																			}
-																													
-																													
+																																									
 
 																#YoFileTyper 	{
 																													
 																				background-color: #999900;
-																				margin: 10px;
-																				scrollbar-color: red, yellow;
-																				overflow: hidden;
+																				margin: 10px;																			
 				
-																			}
-																																																
+																			}			
+
+																::-webkit-scrollbar {	
+																
+																		background: red;
+																
+																}		
 
 																#YoFileTyper:Hover 	{
 																
 																				background-color: #cccc00;
-																												
-																												
-																			}
-																			
-																			
+																																																							
+																			}																	
 																												
 																																																
-																li 					{
+																li 				{
 																													
 																				display: inline;
 																				float: left
 																				overflow: hidden;
 																				border-style: inset;
-																				
-																
-																													
-																													
+																																			
+																																																									
 																			}
 																						
 																#YoNewFileButton	{
@@ -104,16 +121,13 @@
 																
 																			background-color: #cccc00;	
 																
-																			}
-
-																
+																			}															
 																												
 																#YoSaveButton:Hover {
 																
 																				background-color: #cccc00;
 																												
-																			}
-																										
+																			}																									
 																
 																#YoRunButton:Hover {
 																
@@ -121,7 +135,6 @@
 																				
 																				
 																			}
-
 																			
 																#YoRunButton					{
 																													
@@ -135,8 +148,7 @@
 																													
 																			}	
 
-
-																#YoFileMaker		{
+																#YoIDEFileMaker		{
 																
 																				background-color: #999900;
 																				width: 200px;
@@ -146,8 +158,7 @@
 																				padding: 10px;
 																			
 																			
-																			}
-																			
+																			}																			
 																
 																input							{
 																
@@ -156,8 +167,7 @@
 																				width: 75px;
 																
 																			}
-																
-																
+																															
 																#YoFooter		{
 																
 																				position: absolute;
@@ -180,31 +190,32 @@
 					<div id="YoBody">
 		
 		
-										<body>		
+										<body>										
 
-												<div id="YoFileMaker">
-												
-														<h3>fileName.fileType</h3>
 														
-																<div>
-																
-																
-																		<ul>
+											<div id="YoIDE">
+																							
+																<div id="YoIDEFileMaker">
+												
+																				<h3>fileName.fileType</h3>
+														
+														
+																							<ul>
 																														
-																				<li id="YoNewFileButton">+</li>
+																								<li id="YoNewFileButton">+</li>
 											
-																		</ul>
+																							</ul>
+																							
+																							<div>
+																
 														
-																		<H3><input id="YoFileName"></input>.<input id="YoFileType"></input></H3>
+																								<H3><input id="YoFileName"></input>.<input id="YoFileType"></input></H3>
 								
-																</div>
+																							</div>
 												
-												</div>
-										
-
-														
-																<div id="YoIDE">
-																			
+																</div>
+																							
+																							
 																							<div id="YoToolBar">
 										
 											 
@@ -218,14 +229,13 @@
 																														<li id="YoSaveButton" class="button">Save</li>
 																														<li id="YoRunButton" class="button">Run</li>
 											
-																											</ul>
-																									</div>			
+																												</ul>
+																							</div>			
 																																																																								
 						
 									
-																</div>								
-														
-														
+											</div>								
+																												
 						
 <script>
 								
@@ -235,13 +245,17 @@
 
 class file{
 
-		file(fileName, fileType, data, id) {
+		cFile(fileName, fileType, data, id) {
 
 			fileName = this.name;
 			fileType = this.fileType;
-			data = this.value;
+			this.test = function typeWrote(){
+			
+				console.log(this.data)
+			
+			}
 			id = document.getElementById(id);
-			console.log(this.name + " File Object I");
+			console.log(this.name + " File Object Found");
 
 		}
 
@@ -252,15 +266,13 @@ class file{
 							
 let YoFileTyper = document.getElementById("YoFileTyper");
 
-const YoFile = new file("YoFile", "html", "hey", "YoFileTyper");
-
-console.log(YoFile.name);
 
 //AsYouType in the inputs it will call this
 YoFileTyper.oninput = fileState;
 
 
 
+let YoIDE = document.getElementById("YoIDE");
 
 let YoFileNameTag = document.getElementById("YoFileName");
 
@@ -274,19 +286,24 @@ let YoFileTypeTag = document.getElementById("YoFileType");
 YoFileTypeTag.oninput = fileState;
 
 
+let YoCurrentF = new file(YoFileNameTag.value, YoFileTypeTag.value, YoFileTyper.value, 'YoFileNameTag');
+
+console.log(YoCurrentF.test);
+
+
 const whatTo = {drag: "id ", click: "id", color: "id"};
 
 
 //makes the run button work
 
-var YoRunButton = document.getElementById("YoRunButton");
+const YoRunButton = document.getElementById("YoRunButton");
 
 YoRunButton.onclick = runButton;
 
 
 //makes the save button work
 
-var YoSaveButton = document.getElementById("YoSaveButton");
+const YoSaveButton = document.getElementById("YoSaveButton");
 
 YoSaveButton.onclick = saveButton;
 
@@ -299,6 +316,7 @@ function fileState(){
 	console.log("Text Inside "+ this.id +" Changed");
 	console.log(YoInput);
 	return YoInput;
+	const YoCurrentF = new file(YoFileNameTag.value, YoFileTypeTag.value, YoFileTyper.value, 'YoFileNameTag');
 }
 
 
@@ -308,6 +326,7 @@ function runButton() {
 
 	console.log("Run Button Clicking");
 	console.log(YoFileTyper.value);
+	console.log(YoCurrentF.name);
 
 }
 
@@ -353,16 +372,15 @@ YoFileTyper.addEventListener('keydown', function(tab) {
 
 
 
-//YoFileTyper.addEventListener('onclick', dragElement(document.getElementById("Yo")));
+//YoIDE.addEventListener('onclick', dragElement(document.getElementById("YoIDE")));
 
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "App")) {
+  if (document.getElementById(elmnt.id + "FileMaker")) {
     // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "App").onmousedown = dragMouseDown;
+    document.getElementById(elmnt.id + "FileMaker").onmousedown = dragMouseDown;
   } else {
-    // otherwise, move the DIV from anywhere inside the DIV:
-    elmnt.onmousedown = dragMouseDown;
+   console.log("something went wrong")
   }
 
   function dragMouseDown(e) {
@@ -398,37 +416,31 @@ function dragElement(elmnt) {
 
 
 
-
+console.log(YoFileNameTag.value);
 							
 							
 </script>
 							
-							
-							
-								
+															
 							
 										</body>
-																		
-																		
-		
+																																			
 									</div>
-																
+
+									
+		<p>Im an element outside the body of the app test</p>		
 		
-		
-		
-				<div id="YoFooter">
+									<div id="YoFooter">
 	
-						<footer>
+										<footer>
 	
-							<p>designed to be free forever by <a href="https://github.com/khemboi">Khem Boi</a></p>
+											<p>designed to be free forever by <a href="https://github.com/khemboi">Khem Boi</a></p>
 			
-						</footer>
+										</footer>
 	
-				</div>
+									</div>
 	
 	
-	
-	</div>
-	
+		</div>	
 	
 </html>
