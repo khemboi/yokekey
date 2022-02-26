@@ -19,9 +19,7 @@
 																				background-color: 	 #4d4d4d;	
 																				 float: center;
 																				 position: absolute;
-																				z-index: 9;
-																				
-																				
+																				z-index: 9;																	
 																				
 																			}
 
@@ -30,7 +28,6 @@
 																				background-color:  #999999;	
 																				border-style: inset;
 																				border-width: 7px;
-
 																				overflow: hidden;
 																				height: 865px;
 																				width: 1850px;
@@ -41,10 +38,8 @@
 																		
 																#YoBody		{
 																
-																				background-color: #f2f2f2;
-																				
-																				border-width: 7px;
-																				
+																				background-color: #f2f2f2;	
+																				border-width: 7px;		
 																				overflow: hidden;
 																				height: 740px;
 																				width: 1830px;
@@ -58,22 +53,12 @@
 																				background-color: Red;
 																				width: 1900px;
 																				height: 70px;
-																
+																				
 																}
 																			
 																													
 																#YoToolBar 		{
-																													
-																				background-color: #999900;
-																				border-top-style: inset;
-																				border-bottom-style: inset;
-																				border-width: 3px;
-																				border-radius: 2px;
-																				width: 700px;
-																			
-																				overflow: hidden;
-																				font: Lucida Console;
-																			
+				
 																			}
 																																								
 
@@ -83,10 +68,9 @@
 																				border-style: inset;
 																				border-width: 3px;
 																				border-radius: 2px;
-																				width:2000px;
-																				
+																				width:2000px;																				
 																				height: 737px;
-																				 display: flex;
+																				display: flex;
 																				justify-content: center;
 																																																											
 																			}
@@ -94,21 +78,29 @@
 																			
 																#YoIDELeft		{
 																
-																background-color: red;
-																height: 800px;
-																width: 600px;
+																				background-color: red;
+																				height: 800px;
+																				width: 600px;
+																
 																			}
+																			
+																#YoIDEModuleMaker {
+																
+																				overflow-y: scroll;
+																				height: 400px;
+																				width: 600px;
+																				background-color: green;											
+																
+																}
 																			
 																			
 																#YoIDERight		{
 																
-																background-color: red;
-																height: 500px;
-																width: 700px;
+																				background-color: red;
+																				height: 500px;
+																				width: 700px;
 																			}			
-																			
-																			
-																																									
+																																																								
 
 																#YoFileTyper 	{
 																													
@@ -119,7 +111,7 @@
 
 																::-webkit-scrollbar {	
 																
-																		background: red;
+																				background: #999900;
 																
 																}		
 
@@ -135,20 +127,19 @@
 																				display: inline;
 																				float: left
 																				overflow: hidden;
-																				border-style: inset;
-																																			
+																				border-style: inset;																			
 																																																									
 																			}
 																						
 																#YoNewFileButton	{
 																
-																					float: right;
-																
+																				float: right;
+
 																			}
 
 																#YoNewFileButton:Hover {
 																
-																			background-color: #cccc00;	
+																				background-color: #cccc00;	
 																
 																			}															
 																												
@@ -184,9 +175,7 @@
 																				height: 150px;																				
 																				overflow: hidden;
 																				padding: 10px;
-																				float: left;
-																				
-																			
+																				float: left;																				
 																			
 																			}	
 
@@ -196,12 +185,11 @@
 																				width: 200px;
 																				height: 50px;																				
 																				overflow: hidden;
-																				padding: 10px;
-																				
+																				padding: 10px;																		
 																			
 																			}				
 																
-																input							{
+																input			{
 																
 																				background-color: #999900;
 																				font-weight: bold;
@@ -211,8 +199,6 @@
 																															
 																#YoFooter		{
 																
-																				position: absolute;
-																				bottom:0;
 																			}
 																
 																
@@ -234,9 +220,9 @@
 									<body>	
 																
 															
-															<div id="YoTabBar">
+											<div id="YoTabBar">
 															
-																<div id="YoIDEFileMakerTab">
+													<div id="YoIDEFileMakerTab">
 																							
 																							<ul>
 																														
@@ -246,63 +232,71 @@
 																							
 																							<h3>fileName.fileType</h3>														
 																																																																					
-																</div>		
+														</div>		
 
-															</div>
+											</div>
 														
-										<div id="YoIDE">
+								<div id="YoIDE">
 																		
 
-																	<div id="YoIDELeft">
+												<div id="YoIDELeft">
 						
-																		<div id="YoIDEModuleMaker">
+													<div id="YoIDEModuleMaker">
 												
-																				<textarea style="height: 184px; width: 575px;"></textarea>
-																				<textarea style="height: 184px; width: 575px;"></textarea>
-																				<textarea style="height: 184px; width: 575px;"></textarea>
-																				<textarea style="height: 184px; width: 575px;"></textarea>
+														<textarea style="height: 160px; width: 267px;"></textarea>
+														<textarea style="height: 160px; width: 267px;"></textarea>
+														<textarea style="height: 160px; width: 267px;"></textarea>
+														<textarea style="height: 160px; width: 267px;"></textarea>
+														<textarea style="height: 160px; width: 267px;"></textarea>
+														<textarea style="height: 160px; width: 267px;"></textarea>
+														<textarea style="height: 160px; width: 267px;"></textarea>
+														<textarea style="height: 160px; width: 267px;"></textarea>
 												
-																			</div>							
+													</div>		
 
-																		</div>
-																																							
+																				
+															<div>
+																	<p>Bottom</p>
+															</div>
+																				
+												</div>
+																																												
 																							
-																<div id="YoToolBar">
+												<div id="YoToolBar" style="background-color: #999900; border-top-style: inset; border-bottom-style: inset; border-width: 3px; border-radius: 2px; width: 700px; overflow: hidden; font: Lucida Console;">
 																																																																																																			
-																		<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 635px; width: 675px;" placeholder="Hey World"></textarea>
+																<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 635px; width: 675px;" placeholder="Hey World"></textarea>
 																																																						
-																</div>			
+												</div>			
+
 
 
 																							
-																	<div id="YoIDERight">
+												<div id="YoIDERight">
 																		
-																		
-															
-																		<div id="YoIDEModuleMaker">
+																<div id="YoIDEModuleMaker2">
 												
-																				<textarea style="height: 498px; width: 522px;"></textarea>
+																	<textarea style="height: 498px; width: 522px;"></textarea>
 																				
 												
-																			</div>							
+																</div>							
 
 																		<div id="YoIDEFileMaker">
 												
 																				<h3>fileName.fileType</h3>
 																																												
-																							<div>
+																					<div>
 																
 														
-																								<H3><input id="YoFileName"></input>.<input id="YoFileType"></input></H3>
+																						<H3><input id="YoFileName"></input>.<input id="YoFileType"></input></H3>
 																												
 																												
-																												<ul>
-																														<li id="YoSaveButton" class="button">Save</li>
-																														<li id="YoRunButton" class="button">Run</li>
+																								<ul>
+																									<li id="YoSaveButton" class="button">Save As</li>
+																									<li id="YoRunButton" class="button">Update</li>
 											
-																												</ul>
+																								</ul>
 								
-																							</div>
+																					</div>
 												
 																			</div>				
 
@@ -505,7 +499,7 @@ console.log(YoFileNameTag.value);
 									
 		<p>Im an element outside the body of the app test</p>		
 		
-									<div id="YoFooter">
+									<div id="YoFooter" style="position: absolute; bottom:0;">
 	
 										<footer>
 	
