@@ -8,11 +8,11 @@ Free code, if someone can make a better version and sell it, awesome, but I don'
 
 # What inspired this?
 
-My teacher Mr. Anderson in highschool had us learn programming through a website that let us drag and drop code to solve problems and would challenge us using the least lines. Also my pal Nile and I both agreed we hated coding as is but loved making things with it. So I thought, hey, it'd be cool if that website let us drag and drop to code anything without restrictions. Thus YoKeKey was born.
+My teacher Mr. Anderson in highschool had us learn programming through a website that let us drag and drop code to solve problems and would challenge us using the least lines. Also my pal Nile and I both agreed we hated coding as is but loved making things with it. So I thought, hey, it'd be cool if that website let us drag and drop to code anything without restrictions. Thus YoKeKeY was born.
 
 # Why YoKeKeY?
 
-Yolk-Key or YoKeKey inspired by the infamous hacker known as 4chan, also I don't want to get sued by Nintendo or some other software company in the future so lets go with Yo-KEK-Key.
+Yolk-Key or YoKeK-E inspired by the infamous hacker known as 4chan, also I don't want to get sued by Nintendo or some other software company in the future so lets go with Yo-KEK-Key.
 
 # Why those colors?
 
