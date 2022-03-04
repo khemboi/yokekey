@@ -3,13 +3,19 @@
 	<html id="Yo">
 				<div id="YoApp">
 		
+						<div id="YoHeader">						
 
-						<div id="YoHeader">
-						
-										<p>im in your header div</p>
-										
 											<head>
-											
+													<p>YoKeKeY</p>
+										
+										
+													<!--Refreshes the app automatically-->
+													<meta http-equiv="refresh" content="5">
+													
+													
+													<!--helps it scale via mobile-->
+													<meta name="viewport" content="width=device-width, initial-scale=1.0">
+													
 													<!--Use this tag to embed CSS and Javascript on sites, this is to help keep style in an IFrame-->
 																			
 														<style>
@@ -53,6 +59,7 @@
 																				background-color: Red;
 																				width: 1900px;
 																				height: 70px;
+																				inline: block;
 																				
 																}
 																			
@@ -106,6 +113,7 @@
 																													
 																				background-color: #999900;
 																				margin: 10px;
+																				padding-left: 50px;
 																				
 																			}			
 
@@ -201,6 +209,13 @@
 																
 																			}
 																
+																.modulesCreatorTextArea {
+																			border: inset;
+																			padding: 15px;
+																			margin: 5px;
+																
+																}
+																
 																
 															</style>
 						
@@ -233,24 +248,35 @@
 																							<h3>fileName.fileType</h3>														
 																																																																					
 														</div>		
-
+														
+													<div id="YoIDEFileMakerTab">
+																							
+																							<ul>
+																														
+																								<li id="YoNewFileButton">+</li>
+											
+																							</ul>
+																							
+																							<h3>fileName.fileType</h3>														
+																																																																					
+														</div>		
 											</div>
 														
-								<div id="YoIDE">
+								<yoide id="YoIDE">
 																		
 
 												<div id="YoIDELeft">
 						
 													<div id="YoIDEModuleMaker">
 												
-														<textarea style="height: 160px; width: 267px;"></textarea>
-														<textarea style="height: 160px; width: 267px;"></textarea>
-														<textarea style="height: 160px; width: 267px;"></textarea>
-														<textarea style="height: 160px; width: 267px;"></textarea>
-														<textarea style="height: 160px; width: 267px;"></textarea>
-														<textarea style="height: 160px; width: 267px;"></textarea>
-														<textarea style="height: 160px; width: 267px;"></textarea>
-														<textarea style="height: 160px; width: 267px;"></textarea>
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
 												
 													</div>		
 
@@ -264,7 +290,7 @@
 																							
 												<div id="YoToolBar" style="background-color: #999900; border-top-style: inset; border-bottom-style: inset; border-width: 3px; border-radius: 2px; width: 700px; overflow: hidden; font: Lucida Console;">
 																																																																																																			
-																<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 635px; width: 675px;" placeholder="Hey World"></textarea>
+																<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 635px; width: 625px;" placeholder="Hey World"></textarea>
 																																																						
 												</div>			
 
@@ -273,37 +299,37 @@
 																							
 												<div id="YoIDERight">
 																		
-																<div id="YoIDEModuleMaker2">
+														<div id="YoIDEModuleMaker2">
 												
-																	<textarea style="height: 498px; width: 522px;"></textarea>
+															<textarea style="height: 498px; width: 522px;"></textarea>
 																				
 												
-																</div>							
+														</div>							
 
-																		<div id="YoIDEFileMaker">
+																<div id="YoIDEFileMaker">
 												
-																				<h3>fileName.fileType</h3>
+																		<h3>fileName.fileType</h3>
 																																												
-																					<div>
+																			<div>
 																
 														
-																						<H3><input id="YoFileName"></input>.<input id="YoFileType"></input></H3>
+																				<H3><input id="YoFileName"></input>.<input id="YoFileType"></input></H3>
 																												
 																												
-																								<ul>
-																									<li id="YoSaveButton" class="button">Save As</li>
-																									<li id="YoRunButton" class="button">Update</li>
-											
-																								</ul>
+																						<ul>
+																							<li id="YoSaveButton" class="button">Save As</li>
+																							<li id="YoRunButton" class="button">Update</li>
+										
+																						</ul>
 								
-																					</div>
+																			</div>
 												
-																			</div>				
+																</div>				
 
 
-																		</div>
+													</div>
 									
-										</div>								
+										</yoide>								
 	
 	
 <script>
