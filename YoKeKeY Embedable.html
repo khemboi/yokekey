@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 
-	<html id="Yo">
-				<div id="YoApp">
-		
-						<div id="YoHeader">						
 
-											<head>
+<html id="Yo">
+
+							<div id="YoApp" style="width: 1150px; height: 792px;">
+		
+						<div id="YoHeader">	
+						
+												<head>					
+
+											
 													<p>YoKeKeY</p>
 										
 										
 													<!--Refreshes the app automatically-->
-													<meta http-equiv="refresh" content="5">
+													<meta http-equiv="refresh" content="100">
 													
 													
 													<!--helps it scale via mobile-->
@@ -39,6 +43,7 @@
 																				width: 1850px;
 																				margin: 15px;
 																				margin-top: 25px;
+																				resize: both;
 																				
 																			}
 																		
@@ -47,40 +52,31 @@
 																				background-color: #f2f2f2;	
 																				border-width: 7px;		
 																				overflow: hidden;
-																				height: 740px;
-																				width: 1830px;
+																				height: 4000px;
+																				width: 1400px;
 																				margin-left: 5px;
 																				margin-top: 30px;
+																				resize: both;
 																				
 																			}
 
 																#YoTabBar	{
 																
 																				background-color: Red;
-																				width: 1900px;
+																				width: 1800px;
 																				height: 70px;
-																				inline: block;
+																				
+																				resize: both;
+																				overflow-y:scroll;
 																				
 																}
 																			
 																													
 																#YoToolBar 		{
-				
+																					resize: both;
 																			}
 																																								
 
-																#YoIDE 			{
-	
-																				background-color: #cccc00;
-																				border-style: inset;
-																				border-width: 3px;
-																				border-radius: 2px;
-																				width:2000px;																				
-																				height: 737px;
-																				display: flex;
-																				justify-content: center;
-																																																											
-																			}
 																			
 																			
 																#YoIDELeft		{
@@ -88,6 +84,8 @@
 																				background-color: red;
 																				height: 800px;
 																				width: 600px;
+																				resize: both;
+																				float: right;
 																
 																			}
 																			
@@ -96,17 +94,13 @@
 																				overflow-y: scroll;
 																				height: 400px;
 																				width: 600px;
-																				background-color: green;											
+																				background-color: green;	
+																				resize: both;
 																
 																}
 																			
 																			
-																#YoIDERight		{
-																
-																				background-color: red;
-																				height: 500px;
-																				width: 700px;
-																			}			
+															
 																																																								
 
 																#YoFileTyper 	{
@@ -180,10 +174,11 @@
 																
 																				background-color: #999900;
 																				width: 200px;
-																				height: 150px;																				
+																				height: 100px;																				
 																				overflow: hidden;
 																				padding: 10px;
-																				float: left;																				
+																				float: left;
+																				resize: both;
 																			
 																			}	
 
@@ -193,7 +188,9 @@
 																				width: 200px;
 																				height: 50px;																				
 																				overflow: hidden;
-																				padding: 10px;																		
+																				padding: 10px;	
+																				resize: both;
+																				float: left;
 																			
 																			}				
 																
@@ -213,6 +210,20 @@
 																			border: inset;
 																			padding: 15px;
 																			margin: 5px;
+																			
+																
+																}
+																
+																#YoCodeResult 	{
+																			
+																		resize: both;	
+																		
+																
+																}
+																
+																#YoTabHolder {
+																	overflow: hidden;
+																	resize: both;
 																
 																}
 																
@@ -229,15 +240,19 @@
 											</div>
 		
 	
-					<div id="YoBody">
+					<div id="YoBody" style="height: 719px; width: 1132px;">
 		
 		
-									<body>	
+										<body>
 																
 															
-											<div id="YoTabBar">
+												<div id="YoTabBar" style="width: 1180px; height: 74px;">
+												
+														<!--needed a container div to help align other elements-->
+												
+													<div id="YoTabHolder" style="width: 1170px; height: 82px;">
 															
-													<div id="YoIDEFileMakerTab">
+															<div id="YoIDEFileMakerTab" style="width: 159px; height: 39px;">
 																							
 																							<ul>
 																														
@@ -247,9 +262,9 @@
 																							
 																							<h3>fileName.fileType</h3>														
 																																																																					
-														</div>		
+																</div>		
 														
-													<div id="YoIDEFileMakerTab">
+															<div id="YoIDEFileMakerTab" style="width: 934px; height: 39px;">
 																							
 																							<ul>
 																														
@@ -259,77 +274,80 @@
 																							
 																							<h3>fileName.fileType</h3>														
 																																																																					
-														</div>		
+																</div>		
+														
+													</div>
 											</div>
 														
-								<yoide id="YoIDE">
-																		
-
+															
+								
+								
+								
+										<div id="YoToolBar" style="float: left; background-color: rgb(153, 153, 0); width: 1133px; overflow: hidden; height: 646px;">
+																																																																																																			
+																<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 622px; width: 458px;" placeholder="Hey World" class="file"></textarea>
+																
+																
 												<div id="YoIDELeft">
 						
-													<div id="YoIDEModuleMaker">
-												
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>
-												
-													</div>		
+													
 
-																				
-															<div>
-																	<p>Bottom</p>
-															</div>
-																				
-												</div>
-																																												
-																							
-												<div id="YoToolBar" style="background-color: #999900; border-top-style: inset; border-bottom-style: inset; border-width: 3px; border-radius: 2px; width: 700px; overflow: hidden; font: Lucida Console;">
-																																																																																																			
-																<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 635px; width: 625px;" placeholder="Hey World"></textarea>
-																																																						
-												</div>			
-
-
-
-																							
-												<div id="YoIDERight">
-																		
-														<div id="YoIDEModuleMaker2">
+															<div id="YoIDEFileMaker" style="width: 583px; height: 79px;">
 												
-															<textarea style="height: 498px; width: 522px;"></textarea>
-																				
-												
-														</div>							
-
-																<div id="YoIDEFileMaker">
-												
-																		<h3>fileName.fileType</h3>
 																																												
 																			<div>
 																
 														
-																				<H3><input id="YoFileName"></input>.<input id="YoFileType"></input></H3>
+																				<h3><input id="YoFileName" placeholde="fileName">.<input id="YoFileType"></h3>
 																												
 																												
 																						<ul>
 																							<li id="YoSaveButton" class="button">Save As</li>
 																							<li id="YoRunButton" class="button">Update</li>
+																							<input type="file" id="myfile" name="myfile" />
+																							
 										
 																						</ul>
 								
 																			</div>
 												
 																</div>				
+															
+															
+													<iframe id="YoCodeResult" style="width: 596px; height: 327px;"></iframe>
+															
+													<div id="YoIDEModuleMaker" style="width: 600px; height: 212px;">
+												
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea">
+														
+														<!DOCTYPE>
+														
+																<html>
+																		<head>														
+																		</head>
+																				<body>
+																				</body>
+																</html>
+														
+														</textarea>
+														
+														
+														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>													
+												
+													</div>		
+															
+															
+																				
+												</div>
+																
+																
+																																																						
+										</div>
+																		
 
-
-													</div>
+										
 									
-										</yoide>								
+																	
 	
 	
 <script>
@@ -518,7 +536,7 @@ console.log(YoFileNameTag.value);
 							
 															
 							
-										</body>
+											</body>
 																																			
 									</div>
 
@@ -538,4 +556,7 @@ console.log(YoFileNameTag.value);
 	
 		</div>	
 	
+
+
+
 </html>
