@@ -1,51 +1,46 @@
+<!-- Empty -->
 <!DOCTYPE html>
 
-
 <html id="Yo">
+   
+<div id="YoApp" style="resize: both; width: 1232px; height: 798px;">
 
-							<div id="YoApp" style="width: 1150px; height: 792px;">
-		
-						<div id="YoHeader">	
-						
-												<head>					
 
-											
-													<p>YoKeKeY</p>
-										
-										
-													<!--Refreshes the app automatically-->
-													<meta http-equiv="refresh" content="100">
+          <div id="YoHeader">	
+																																														<head>
+<!--Refreshes the app automatically-->
+					<meta http-equiv="refresh" content="1000">
+																							
+<!--helps it scale via mobile-->
+					<meta name="viewport" content="width=1280, initial-scale=1.5">
 													
-													
-													<!--helps it scale via mobile-->
-													<meta name="viewport" content="width=device-width, initial-scale=1.0">
-													
-													<!--Use this tag to embed CSS and Javascript on sites, this is to help keep style in an IFrame-->
-																			
-														<style>
-																			
-																#Yo				{
+<!--Use this tag to embed CSS and Javascript 
+ on sites, this is to help keep style in an IFrame-->																				<style>
+  
+  	#Yo				{
 																												
-																				background-color: 	 #4d4d4d;	
-																				 float: center;
-																				 position: absolute;
-																				z-index: 9;																	
+						background-color: 	 #4d4d4d;	
+									 float: center;
+													 position: absolute;
+													z-index: 9;				
 																				
-																			}
+																				
+													}
 
-																#YoApp 			{
+							#YoApp 		{
 																													
-																				background-color:  #999999;	
-																				border-style: inset;
-																				border-width: 7px;
-																				overflow: hidden;
-																				height: 865px;
-																				width: 1850px;
-																				margin: 15px;
-																				margin-top: 25px;
-																				resize: both;
+													background-color:  #999999;	
+													border-style: inset;
+													border-width: 7px;
+													overflow: hidden;
+													height: 300px;
+													width: 300px;
+													margin: 15px;
+													margin-top: 25px;
+																			
+													border-radius: 10px;
 																				
-																			}
+													}
 																		
 																#YoBody		{
 																
@@ -66,7 +61,7 @@
 																				width: 1800px;
 																				height: 70px;
 																				
-																				resize: both;
+																				
 																				overflow-y:scroll;
 																				
 																}
@@ -74,10 +69,7 @@
 																													
 																#YoToolBar 		{
 																					resize: both;
-																			}
-																																								
-
-																			
+																			}																																																									
 																			
 																#YoIDELeft		{
 																
@@ -88,7 +80,7 @@
 																				float: right;
 																
 																			}
-																			
+
 																#YoIDEModuleMaker {
 																
 																				overflow-y: scroll;
@@ -97,11 +89,7 @@
 																				background-color: green;	
 																				resize: both;
 																
-																}
-																			
-																			
-															
-																																																								
+																}																																																																																																									
 
 																#YoFileTyper 	{
 																													
@@ -178,7 +166,8 @@
 																				overflow: hidden;
 																				padding: 10px;
 																				float: left;
-																				resize: both;
+                                       
+																				
 																			
 																			}	
 
@@ -186,11 +175,32 @@
 																
 																				background-color: #999900;
 																				width: 200px;
+																				height: 30px;																				
+																				overflow: hidden;
+																			
+																				border: inset;
+																				float: left;
+                                         font-weight: 2;
+                                         resize: both;
+                                         padding-bottom: 10px;
+                                          transition: transform 2s; 
+                                          font-size: 12px;
+																			
+																			}				
+
+
+                                #YoIDEFileMakerTab:Hover		{
+																
+																				background-color: #cccc00;
+																				width: 200px;
 																				height: 50px;																				
 																				overflow: hidden;
-																				padding: 10px;	
-																				resize: both;
+																				
+																				border: inset;
 																				float: left;
+                                         font-weight: 2;
+                                         padding-bottom: 30px;
+                                        
 																			
 																			}				
 																
@@ -223,7 +233,8 @@
 																
 																#YoTabHolder {
 																	overflow: hidden;
-																	resize: both;
+																	overflow-x: auto;
+																	
 																
 																}
 																
@@ -234,129 +245,105 @@
 				
 																								<title>YoKeKeY</title>	
 						
-													</head>
-		
+													
+		</head>
 		
 											</div>
-		
-	
-					<div id="YoBody" style="height: 719px; width: 1132px;">
-		
-		
-										<body>
+
+
+	<div id="YoBody" style="height: 720px; width: 1183px;">
+		<body>			
 																
-															
-												<div id="YoTabBar" style="width: 1180px; height: 74px;">
-												
-														<!--needed a container div to help align other elements-->
-												
-													<div id="YoTabHolder" style="width: 1170px; height: 82px;">
-															
-															<div id="YoIDEFileMakerTab" style="width: 159px; height: 39px;">
-																							
-																							<ul>
-																														
-																								<li id="YoNewFileButton">+</li>
-											
-																							</ul>
-																							
-																							<h3>fileName.fileType</h3>														
-																																																																					
-																</div>		
+
+
+<div id="YoTabBar" style="overflow: hidden; width: 1188px; height: 63px; resize: both;">	
+  
+                        <!--needed a container div to help align other elements-->		
+  	          <div id="YoTabHolder" style="white-space: nowrap; width: 1183px; height: 66px; resize: both;">														
+                      <div id="YoIDEFileMakerTab" style="width: 151px; height: 38px;">																											  <h3>fileName.fileType</h3>																																					      </div>		
+	                     <div id="YoIDEFileMakerTab" style="width: 149px; height: 38px;">	   	                                                 <h3>fileName.fileType</h3>												                                                     </div>		
+	                    <div id="YoIDEFileMakerTab" style="width: 149px; height: 38px;">														                              <h3>fileName.fileType</h3>
+                                                          </div>																															<div id="YoIDEFilMakerTab" style="float: right; background-color: yellow; width: 68px; height: 49px; resize: both;">			
+    	                                        <p id="YoNewFileButton">+</p>
+                                                       </div>
+                 </div> 
+
+</div>
 														
-															<div id="YoIDEFileMakerTab" style="width: 934px; height: 39px;">
-																							
-																							<ul>
-																														
-																								<li id="YoNewFileButton">+</li>
-											
-																							</ul>
-																							
-																							<h3>fileName.fileType</h3>														
-																																																																					
-																</div>		
-														
-													</div>
-											</div>
-														
-															
+
+  
+  																											
 								
-								
-								
-										<div id="YoToolBar" style="float: left; background-color: rgb(153, 153, 0); width: 1133px; overflow: hidden; height: 646px;">
+<div id="YoToolBar" style="float; left; background-color: rgb(153, 153, 0); width: 1184px; overflow: hidden; height: 665px;">
+
 																																																																																																			
-																<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 622px; width: 458px;" placeholder="Hey World" class="file"></textarea>
+<textarea id="YoFileTyper" name="YoFileTyper" rows="4" cols="50" style="height: 321px; width: 508px;" placeholder="Hey World" class="file"> 
+</textarea>
 																
 																
 												<div id="YoIDELeft">
-						
-													
+																																			
+															
+<iframe id="YoCodeResult" style="width: 596px; height: 327px;" src="http://www.google.com/">  </iframe>
 
-															<div id="YoIDEFileMaker" style="width: 583px; height: 79px;">
-												
-																																												
-																			<div>
-																
-														
-																				<h3><input id="YoFileName" placeholde="fileName">.<input id="YoFileType"></h3>
+
+
+	<div id="YoIDEFileMaker" style="width: 583px; height: 79px; resize: both;">
+    
+		<h3><input id="YoFileName" placeholde="fileName">.<input id="YoFileType"></h3>
 																												
 																												
-																						<ul>
-																							<li id="YoSaveButton" class="button">Save As</li>
-																							<li id="YoRunButton" class="button">Update</li>
-																							<input type="file" id="myfile" name="myfile" />
-																							
-										
-																						</ul>
+	<ul>
+	<li id="YoSaveButton" class="button">Save As </li>
+	<li id="YoRunButton" class="button">Update</li>	
+                                                 <input type="file"                              id="myfile"                                       name="myfile" style="resize: both;  width: 193px; height: 21px;">								
+										</ul>
 								
 																			</div>
 												
-																</div>				
+	                          </div>				
+													
 															
-															
-													<iframe id="YoCodeResult" style="width: 596px; height: 327px;"></iframe>
-															
-													<div id="YoIDEModuleMaker" style="width: 600px; height: 212px;">
-												
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea">
+						<div id="YoIDEModuleMaker" style="width: 600px; height: 224px;">				        
+             <textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea">																	&lt;!DOCTYPE&gt;
 														
-														<!DOCTYPE>
+																&lt;html&gt;
+																		&lt;head&gt;														
+																		&lt;/head&gt;
+																				&lt;body&gt;
+																				&lt;/body&gt;
+																&lt;/html&gt;
 														
-																<html>
-																		<head>														
-																		</head>
-																				<body>
-																				</body>
-																</html>
-														
-														</textarea>
-														
-														
-														<textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea"></textarea>													
-												
-													</div>		
+														</textarea>									
+            <textarea style="height: 160px; width: 240px;" class="modulesCreatorTextArea">
+              </textarea>																							
+						</div>		
 															
 															
 																				
 												</div>
-																
-																
-																																																						
-										</div>
-																		
-
-										
-									
-																	
-	
-	
+																																																																																				
+								
+																																																				
 <script>
 								
-								
+//scales the website					
+var siteWidth = 1280;
+var scale = screen.width /siteWidth;
+document.querySelector('meta[name="viewport"]').setAttribute('content', 'width='+siteWidth+', initial-scale='+scale+'');
 
-//updates/creates file object
 
-class file{
+
+class whatTo{
+  
+  drag: "id", 
+  click: "id", 
+  color: "id"
+  
+  };
+
+//updates/creates project object
+class project{
 
 		cFile(fileName, fileType, data, id) {
 
@@ -399,23 +386,17 @@ let YoFileTypeTag = document.getElementById("YoFileType");
 YoFileTypeTag.oninput = fileState;
 
 
-let YoCurrentF = new file(YoFileNameTag.value, YoFileTypeTag.value, YoFileTyper.value, 'YoFileNameTag');
+let YoCurrentF = new project(YoFileNameTag.value, YoFileTypeTag.value, YoFileTyper.value, 'YoFileNameTag');
 
-console.log(YoCurrentF.test);
-
-
-const whatTo = {drag: "id ", click: "id", color: "id"};
-
+console.log(YoCurrentF.data);
 
 //makes the run button work
-
 const YoRunButton = document.getElementById("YoRunButton");
 
 YoRunButton.onclick = runButton;
 
 
 //makes the save button work
-
 const YoSaveButton = document.getElementById("YoSaveButton");
 
 YoSaveButton.onclick = saveButton;
@@ -425,14 +406,17 @@ YoSaveButton.onclick = saveButton;
 
 function fileState(){
 	
+	const this = new project(YoFileNameTag.value, 
+                              YoFileTypeTag.value, 
+                              YoFileTyper.value, 
+                              'YoFileNameTag');
+
 	var YoInput = String(this.value);
 	console.log("Text Inside "+ this.id +" Changed");
 	console.log(YoInput);
 	return YoInput;
-	const YoCurrentF = new file(YoFileNameTag.value, YoFileTypeTag.value, YoFileTyper.value, 'YoFileNameTag');
+
 }
-
-
 
 
 function runButton() {
@@ -444,8 +428,6 @@ function runButton() {
 }
 
 
-
-
 function saveButton() {
 
 	console.log("Save Button Clicking");
@@ -453,27 +435,17 @@ function saveButton() {
 
 }
 
-
 // this lets the text editor tab
-
-YoFileTyper.addEventListener('keydown', function(tab) {
-	
-	
+YoFileTyper.addEventListener('keydown', function(tab) {	
 	
   if (tab.key == 'Tab') {
     tab.preventDefault();
     var start = this.selectionStart;
     var end = this.selectionEnd;
-    
-    
-    
 
     // set textarea value to: text before caret + tab + text after caret
     this.value = this.value.substring(0, start) +
-      "\t" + this.value.substring(end);
-      
-      
-      
+      "\t" + this.value.substring(end);   
 
     // put caret at right position again
     this.selectionStart =
@@ -482,81 +454,26 @@ YoFileTyper.addEventListener('keydown', function(tab) {
 });
 
 
-
-
-
-//YoIDE.addEventListener('onclick', dragElement(document.getElementById("YoIDE")));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "FileMaker")) {
-    // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "FileMaker").onmousedown = dragMouseDown;
-  } else {
-   console.log("something went wrong")
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    // stop moving when mouse button is released:
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-
-
-
 console.log(YoFileNameTag.value);
-							
-							
+														
 </script>
-							
-															
-							
-											</body>
-																																			
-									</div>
+																																						
 
-									
-		<p>Im an element outside the body of the app test</p>		
-		
+      	</body>	      
+  </div>
+	
+				<p>Im an element outside the body of the app test</p>	
 									<div id="YoFooter" style="position: absolute; bottom:0;">
 	
 										<footer>
 	
-											<p>designed to be free forever by <a href="https://github.com/khemboi">Khem Boi</a></p>
+			              <p>designed to be free forever by 
+                      <a href="https://github.com/khemboi">Khem Boi</a>
+                     </p>
 			
 										</footer>
 	
 									</div>
 	
-	
-		</div>	
-	
-
-
-
+  </div>   
 </html>
